@@ -35,4 +35,13 @@ public class CatSearchResults_cfm_Actions {
 		
 		
 	}
+	public void enterItemNameForSearch(String item) throws InterruptedException
+	{
+		
+		CommonMethods.sendKeys(objCatSearchResults_cfm_Locators.search_Item_By_Name, item);
+		Thread.sleep(5000);
+		
+		CommonMethods.clickelement(objCatSearchResults_cfm_Locators.search_Icon);
+		Thread.sleep(10000);
+	}
 }
