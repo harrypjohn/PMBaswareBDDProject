@@ -25,5 +25,11 @@ public WebElement special_Functions;
 @FindBy(how=How.XPATH,using="//a[@id='cartBlanketPO']")
 public WebElement create_Blank_PO_Request_Button;
 
+@FindBy(how=How.XPATH,using="//a[@href='javascript:ShipToLoc_ID_selectionWindow()']//span[@class='glyphicon glyphicon-search']")
+public WebElement Ship_To_Location;
+
+@FindBy(how=How.XPATH,using="//a[@href='javascript:BillToLoc_ID_selectionWindow()']//span[@class='glyphicon glyphicon-search']")
+public WebElement Bill_To_Location;
+
 
 }

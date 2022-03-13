@@ -42,6 +42,12 @@ public void click_On_Requistions_Off_Catalog_Request() throws InterruptedExcepti
 	CommonMethods.click_element(objDashboard_cfm_Locators.requistions_Off_Catalog_Request);
 	Thread.sleep(5000);
 }
+public void click_Purchase_Orders() throws InterruptedException
+{ 
+objDashboard_cfm_Locators.purchase_Orders.click();
+Thread.sleep(5000);
+objDashboard_cfm_Locators.manage_Track_Purchase_Orders.click();
+}
 public void clickOnSearchIcon() throws InterruptedException
 {
     CommonMethods.highLightMethod(objDashboard_cfm_Locators.smallsearchbutton);

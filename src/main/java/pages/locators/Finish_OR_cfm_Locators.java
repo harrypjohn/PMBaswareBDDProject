@@ -18,6 +18,8 @@ public class Finish_OR_cfm_Locators {
 	@FindBy(how=How.XPATH,using="//h4[contains(text(),'Successfully processed request')]")
 	public WebElement return_Successfully_Processed_Request;
 
+
+	
 	
 	
 }

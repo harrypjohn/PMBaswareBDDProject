@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="3" ignored="0" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="386619" started-at="2022-01-27T07:13:44Z" finished-at="2022-01-27T07:20:11Z">
+  <suite name="Suite" duration-ms="79454" started-at="2022-02-19T13:25:34Z" finished-at="2022-02-19T13:26:54Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke1@69d9c55]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke1@457e2f02]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="386619" started-at="2022-01-27T07:13:44Z" finished-at="2022-01-27T07:20:11Z">
+    <test name="Test" duration-ms="79454" started-at="2022-02-19T13:25:34Z" finished-at="2022-02-19T13:26:54Z">
       <class name="runner.RunCuke1">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.RunCuke1@69d9c55]" name="setUpClass" is-config="true" duration-ms="1553" started-at="2022-01-27T07:13:44Z" finished-at="2022-01-27T07:13:46Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.RunCuke1@457e2f02]" name="setUpClass" is-config="true" duration-ms="1316" started-at="2022-02-19T13:25:34Z" finished-at="2022-02-19T13:25:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke1@69d9c55]" name="runScenario" duration-ms="167670" started-at="2022-01-27T07:13:46Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-27T07:16:33Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke1@457e2f02]" name="runScenario" duration-ms="21350" started-at="2022-02-19T13:25:35Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-19T13:25:57Z">
           <params>
             <param index="0">
               <value>
@@ -27,10 +27,50 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=98.0.4758.102)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DL32XF2', ip: '172.16.22.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [384ce9eb990b196995578d49792f9f77, get {url=https://pm.baswareqa.com/qapd/cfms/security/login.cfm}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\HARBAN~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:5409}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:5409/devtool..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 384ce9eb990b196995578d49792f9f77]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=98.0.4758.102)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DL32XF2', ip: '172.16.22.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [384ce9eb990b196995578d49792f9f77, get {url=https://pm.baswareqa.com/qapd/cfms/security/login.cfm}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\HARBAN~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:5409}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:5409/devtool..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 384ce9eb990b196995578d49792f9f77
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+at utils.SeleniumDriver.openPage(SeleniumDriver.java:27)
+at Steps.Generate_Order_Request_GuleFile.launch_browser_for(Generate_Order_Request_GuleFile.java:38)
+at ✽.Launch browser for "https://pm.baswareqa.com/qapd/cfms/security/login.cfm"(file:///C:/Users/harbanslal/workspace/BaswareBDD/src/test/resources/features/Generate_Order_Request_FeatureFile.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke1@69d9c55]" name="runScenario" duration-ms="209545" started-at="2022-01-27T07:16:33Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-27T07:20:03Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke1@457e2f02]" name="runScenario" duration-ms="24401" started-at="2022-02-19T13:25:57Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-19T13:26:21Z">
           <params>
             <param index="0">
               <value>
@@ -43,10 +83,102 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=98.0.4758.102)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DL32XF2', ip: '172.16.22.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [384ce9eb990b196995578d49792f9f77, get {url=https://pm.baswareqa.com/qapd/cfms/security/login.cfm}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\HARBAN~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:5409}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:5409/devtool..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 384ce9eb990b196995578d49792f9f77]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=98.0.4758.102)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DL32XF2', ip: '172.16.22.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [384ce9eb990b196995578d49792f9f77, get {url=https://pm.baswareqa.com/qapd/cfms/security/login.cfm}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\HARBAN~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:5409}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:5409/devtool..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 384ce9eb990b196995578d49792f9f77
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+at utils.SeleniumDriver.openPage(SeleniumDriver.java:27)
+at Steps.Generate_Order_Request_GuleFile.launch_browser_for(Generate_Order_Request_GuleFile.java:38)
+at ✽.Launch browser for "https://pm.baswareqa.com/qapd/cfms/security/login.cfm"(file:///C:/Users/harbanslal/workspace/BaswareBDD/src/test/resources/features/PM_6473_Generate_BPO_FeatureFile.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunCuke1@69d9c55]" name="tearDownClass" is-config="true" duration-ms="7815" started-at="2022-01-27T07:20:03Z" finished-at="2022-01-27T07:20:11Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke1@457e2f02]" name="runScenario" duration-ms="24411" started-at="2022-02-19T13:26:21Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-19T13:26:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify autoreceiving is working fine during Alusta invoicing"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify autoreceiving is working fine during Alusta invoicing]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=98.0.4758.102)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DL32XF2', ip: '172.16.22.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [384ce9eb990b196995578d49792f9f77, get {url=https://pm.baswareqa.com/qapd/cfms/security/login.cfm}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\HARBAN~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:5409}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:5409/devtool..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 384ce9eb990b196995578d49792f9f77]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=98.0.4758.102)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DL32XF2', ip: '172.16.22.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [384ce9eb990b196995578d49792f9f77, get {url=https://pm.baswareqa.com/qapd/cfms/security/login.cfm}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\HARBAN~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:5409}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:5409/devtool..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 384ce9eb990b196995578d49792f9f77
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+at utils.SeleniumDriver.openPage(SeleniumDriver.java:27)
+at Steps.Generate_Order_Request_GuleFile.launch_browser_for(Generate_Order_Request_GuleFile.java:38)
+at ✽.Launch browser for "https://pm.baswareqa.com/qapd/cfms/security/login.cfm"(file:///C:/Users/harbanslal/workspace/BaswareBDD/src/test/resources/features/PM_6474_AutoReceiving_Generate_Purchase_Order.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunCuke1@457e2f02]" name="tearDownClass" is-config="true" duration-ms="7924" started-at="2022-02-19T13:26:46Z" finished-at="2022-02-19T13:26:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

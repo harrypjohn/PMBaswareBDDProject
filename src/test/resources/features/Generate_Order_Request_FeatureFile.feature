@@ -8,7 +8,11 @@ Feature: PM-6668 View request - View OR details
     Then Click on Add to Cart button
     Then Click on Shopping Cart button
     Then Click on Finish Request button
-    And Close the testcase
+    Then Get Purchase Order Total
+    Then Click on AP Automation Approval
+    Then Click on Retrieve Purchase Order Data
+    Then Create Invoice
+    #And Close the testcase
 
     Examples: 
       | Username  | Password   |

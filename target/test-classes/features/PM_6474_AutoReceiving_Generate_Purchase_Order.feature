@@ -1,7 +1,6 @@
-
 Feature: Verify autoreceiving is working fine during Alusta invoicing
 
-  Scenario Outline: Verify autoreceiving is working fine during Alusta invoicing
+Scenario Outline: Verify autoreceiving is working fine during Alusta invoicing
     Given Launch browser for "https://pm.baswareqa.com/qapd/cfms/security/login.cfm"
     When Login with <Username> and <Password>
     Then Click on SearchCatalog button
@@ -14,7 +13,7 @@ Feature: Verify autoreceiving is working fine during Alusta invoicing
     Then Click on Shopping Cart button
     Then Click on Finish Request button
     And Close the testcase
-
+    
     Examples: 
       | Username  |Password |
       | t3043admin |1h@ppyseal|

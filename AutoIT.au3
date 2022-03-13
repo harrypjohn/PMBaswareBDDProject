@@ -1,0 +1,5 @@
+WinWaitActive("Open")
+WinActivate("Open")
+ControlFocus("Open","","Edit1")
+ControlSetText("Open","","Edit1","C:\Users\harbanslal\workspace\BaswareBDD\dddd.PNG")
+ControlClick("Open","","Button1")

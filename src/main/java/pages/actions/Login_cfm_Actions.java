@@ -29,9 +29,9 @@ public class Login_cfm_Actions {
 	public void UsernamePasswordEntry(String username, String password) throws InterruptedException
 	{
 		objlogin_cfm_Locators.username.sendKeys(username);
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		objlogin_cfm_Locators.Password.sendKeys(password);
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		CommonMethods.isElementVisible(objlogin_cfm_Locators.LoginButton);
 		if(objlogin_cfm_Locators.LoginButton.isDisplayed())
 		{
@@ -39,9 +39,10 @@ public class Login_cfm_Actions {
 		}
 		objlogin_cfm_Locators.LoginButton.click();
 		
-		
+		Thread.sleep(5000);
          
 	}
+	
 	
 	
 }

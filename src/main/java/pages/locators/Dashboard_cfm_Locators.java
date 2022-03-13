@@ -16,7 +16,11 @@ public class Dashboard_cfm_Locators {
 	public WebElement requistions_Off_Catalog_Request;
 	@FindBy(how=How.XPATH,using="//li[@id='pitmenu_item_110']")
 	public WebElement requisitions_Shopping_Cart_Button;
+	@FindBy(how=How.XPATH,using="//a[@id='linkpitmenu_section_20']")
+	public WebElement purchase_Orders;
 	
+	@FindBy(how=How.XPATH,using="//a[@id='linkpitmenu_item_220']")
+	public WebElement manage_Track_Purchase_Orders;
 	@FindBy(how=How.XPATH,using="//div[@class='north']//div[@id='menuBar']//a[1][1]//b[1]")
 	public WebElement adminDropDown;
 	

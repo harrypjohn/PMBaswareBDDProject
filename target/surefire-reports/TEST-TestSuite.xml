@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="167.672" tests="2" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="95.437" tests="3" errors="0" skipped="0" failures="3">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\harbanslal\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4856515619225452140.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\harbanslal\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3363617927711746886.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_271/bin/server;C:/Program Files/Java/jre1.8.0_271/bin;C:/Program Files/Java/jre1.8.0_271/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\nvm;C:\Program Files\nodejs;C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin;C:\Oracle\instantclient_12_2;C:\Oracle\instantclient_12_2\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Windows\CCM;C:\WINDOWS\CCM;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\HPE\LoadRunner\strawberry-perl\perl\bin;C:\strawberry\c\bin;C:\strawberry\perl\bin;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;D:\BaswareAutomation\Maven\apache-maven-3.6.3\bin;D:\Arvind\chromedriver.exe;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\GitExtensions\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\harbanslal\AppData\Local\Android\Sdk\tools;C:\Users\harbanslal\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\nodejs\;C:\Program Files (x86)\Pulse Secure\VC142.CRT\X64\;C:\Program Files (x86)\Pulse Secure\VC142.CRT\X86\;C:\Users\harbanslal\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\harbanslal\AppData\Local\Programs\Python\Python38-32\;C:\Users\harbanslal\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\harbanslal\AppData\Local\Programs\Python\Python37\;C:\Users\harbanslal\Scripts\;C:\Users\harbanslal\;C:\Program Files\kdiff3;;C:\Users\harbanslal\AppData\Local\Microsoft\WindowsApps;C:\Users\harbanslal\AppData\Roaming\npm;D:\Selenium\ALLAPISANDDRIVERS\Eclipse\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,6 +60,60 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="runScenario" classname="runner.RunCuke1" time="167.672"/>
-  <testcase name="runScenario" classname="runner.RunCuke1" time="209.542"/>
+  <testcase name="runScenario" classname="runner.RunCuke1" time="95.437">
+    <failure message="Unable to find element with locator By.cssSelector: #alusta-navigation&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;&#10;System info: host: &apos;DL32XF2&apos;, ip: &apos;192.168.18.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+Unable to find element with locator By.cssSelector: #alusta-navigation
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DL32XF2', ip: '192.168.18.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: RemoteWebDriver
+</failure>
+    <system-out><![CDATA[I am before method
+Yes login button is visible
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 64537
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Feb 17, 2022 1:30:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Feb 17, 2022 1:30:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 98, so returning the closest version found: 96
+Feb 17, 2022 1:30:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 98 of 96
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario" classname="runner.RunCuke1" time="0.053">
+    <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=98.0.4758.82)&#10;Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;&#10;System info: host: &apos;DL32XF2&apos;, ip: &apos;192.168.18.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5c9b18b03bce516f0f9385bfd6e4b624, get {url=https://pm.baswareqa.com/qapd/cfms/security/login.cfm}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\HARBAN~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:4777}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:4777/devtool..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5c9b18b03bce516f0f9385bfd6e4b624" type="org.openqa.selenium.NoSuchWindowException">org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=98.0.4758.82)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DL32XF2', ip: '192.168.18.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5c9b18b03bce516f0f9385bfd6e4b624, get {url=https://pm.baswareqa.com/qapd/cfms/security/login.cfm}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\HARBAN~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:4777}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:4777/devtool..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c9b18b03bce516f0f9385bfd6e4b624
+</failure>
+    <system-out><![CDATA[I am before method
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="runner.RunCuke1" time="0.055">
+    <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=98.0.4758.82)&#10;Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;&#10;System info: host: &apos;DL32XF2&apos;, ip: &apos;192.168.18.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5c9b18b03bce516f0f9385bfd6e4b624, get {url=https://pm.baswareqa.com/qapd/cfms/security/login.cfm}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\HARBAN~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:4777}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:4777/devtool..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5c9b18b03bce516f0f9385bfd6e4b624" type="org.openqa.selenium.NoSuchWindowException">org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=98.0.4758.82)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DL32XF2', ip: '192.168.18.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5c9b18b03bce516f0f9385bfd6e4b624, get {url=https://pm.baswareqa.com/qapd/cfms/security/login.cfm}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\HARBAN~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:4777}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:4777/devtool..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c9b18b03bce516f0f9385bfd6e4b624
+</failure>
+    <system-out><![CDATA[I am before method
+]]></system-out>
+  </testcase>
 </testsuite>
