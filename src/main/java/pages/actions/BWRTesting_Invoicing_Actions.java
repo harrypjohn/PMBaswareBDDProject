@@ -108,9 +108,14 @@ public class BWRTesting_Invoicing_Actions {
 		objBWRTesting_Invoicing_Locators.delete_Button.click();
 		objBWRTesting_Invoicing_Locators.delete_OK.click();
 	}
-	public void search_Invoice(String invoicenumber)
+	public void search_Invoice(String invoicenumber) throws InterruptedException
 	{
-		objBWRTesting_Invoicing_Locators.enter_Invoice_Number.sendKeys(invoicenumber);
+		
+		CommonMethods.highLightMethod(driver.findElement(By.xpath("//input[@placeholder='Invoice Number']")));
+		
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//input[@placeholder='Invoice Number']")).sendKeys(invoicenumber);;
+		Thread.sleep(5000);
 		objBWRTesting_Invoicing_Locators.click_Search_Button.click();
 	}
 }

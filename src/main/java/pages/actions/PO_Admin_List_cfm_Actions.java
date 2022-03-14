@@ -40,7 +40,7 @@ public void receiving_Purchase_Order(String ponumber) throws InterruptedExceptio
 	CommonMethods.clickelement(objPO_Admin_List_cfm_Locators.click_Checkbox);
 	CommonMethods.clickelement(objPO_Admin_List_cfm_Locators.click_More_Actions);
 	CommonMethods.clickelement(objPO_Admin_List_cfm_Locators.receive_PO);
-	CommonMethods.clickelement(objPO_Admin_List_cfm_Locators.Received_Quantity);;
+	CommonMethods.clickelement(objPO_Admin_List_cfm_Locators.Received_Quantity);
 	CommonMethods.sendKeys(objPO_Admin_List_cfm_Locators.receiving_Reference_Number,ponumber );
 	CommonMethods.clickelement(objPO_Admin_List_cfm_Locators.process_Items);
 }

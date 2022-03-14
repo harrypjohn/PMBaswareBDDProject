@@ -86,16 +86,7 @@ public class Generate_Order_Request_GuleFile {
 		System.out.println("fdsfsadfsdafsdfsd"+purchase_Order_Number);
 
 	}
-	/*@Then("Get Purchase Order Total")
-	public void get_purchase_order_total() throws InterruptedException {
-    objDashboard_cfm_Actions.click_Purchase_Orders();
-    objPO_Admin_List_cfm_Actions.enter_Purchase_Order_Number(purchase_Order_Number);
-    objPO_Admin_List_cfm_Actions.click_Search_Icon();
-    invoice_Total=objPO_Admin_List_cfm_Actions.get_PO_Total();
-    System.out.println("This is purchase order : "+purchase_Order_Number);
-    System.out.println("This is invoice number : "+invoice_Total);
-    
-	}*/
+	
 	@Then("Get Purchase Order Total")
 	public void get_purchase_order_total() throws InterruptedException {
     objDashboard_cfm_Actions.click_Purchase_Orders();
@@ -148,6 +139,7 @@ public class Generate_Order_Request_GuleFile {
 		if(CommonMethods.element_Present(objBWRTesting_Invoicing_Locators.xpath_Of_Count_Image))
 		{
 			objBWRTesting_Invoicing_Actions.click_On_Image_Button();
+			Thread.sleep(2000);
 			Runtime.getRuntime().exec("C:\\Users\\harbanslal\\workspace\\BaswareBDD\\AutoIT.exe");
 			Thread.sleep(5000);
 			System.out.println("Auto IT run");
@@ -157,13 +149,12 @@ public class Generate_Order_Request_GuleFile {
 		{
 			System.out.println("Auto IT did not run");
 		}
-		
-	
 		objBWRTesting_Invoicing_Actions.click_Header_Data();
 		objBWRTesting_Invoicing_Actions.select_Supplier();
 		objBWRTesting_Invoicing_Actions.enter_Other_Data(purchase_Order_Number,invoice_Total);
         objBwreleasetesting1_p2p_Edge_home_Actions.click_On_Accounts_Payable();
         objBWRTesting_Invoicing_Actions.search_Invoice(purchase_Order_Number);
+	
 	}
 	
 public  String purchaseoder()
@@ -173,7 +164,8 @@ public  String purchaseoder()
 }
 
 @Then("Search and Verify processed invoice")
-public void search_and_verify_processed_invoice() {
+public void search_and_verify_processed_invoice() throws InterruptedException {
+	
     objBWRTesting_Invoicing_Actions.search_Invoice(purchase_Order_Number);
 }
 	@Then("Close the testcase")

@@ -77,7 +77,7 @@ public class BWRTesting_Invoicing_Locators {
 	public WebElement delete_OK;
 	
 	
-	@FindBy(how=How.XPATH,using="//input[@placeholder='Supplier Name, Invoice Number']")
+	@FindBy(how=How.XPATH,using="//input[@placeholder='Invoice Number']")
 	public WebElement enter_Invoice_Number;
 	
 	
