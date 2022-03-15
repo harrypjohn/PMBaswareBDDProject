@@ -28,4 +28,10 @@ public class Invoice_Manager_cfm_Actions {
 		Thread.sleep(5000);
 		
 	}
+	public void click_On_Purchase_Manager() throws InterruptedException
+	{
+		objInvoice_Manager_cfm_Locators.Invoicing.click();
+		Thread.sleep(5000);
+		
+	}
 }

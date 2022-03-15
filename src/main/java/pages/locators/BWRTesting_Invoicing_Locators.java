@@ -85,6 +85,8 @@ public class BWRTesting_Invoicing_Locators {
 	@FindBy(how=How.XPATH,using="//button[normalize-space()='Search']")
 	public WebElement click_Search_Button;
 	
+	@FindBy(how=How.XPATH,using="//div[@class='split-view-top-container']//div[@name='center']//div[6]")
+	public WebElement alusta_Inovice_Status;
 	
 	
 	

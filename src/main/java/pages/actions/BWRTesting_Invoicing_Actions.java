@@ -61,6 +61,30 @@ public class BWRTesting_Invoicing_Actions {
 		Thread.sleep(1000);
 		last.findElement(By.cssSelector("a[aria-label='Invoicing']")).click();	Thread.sleep(5000);
 	}
+	
+	public void click_On_Purchase_Manager() throws InterruptedException
+	{
+		
+		
+		//This Element is inside single shadow DOM.
+	
+		String cssSelectorForHost1 = "#alusta-navigation";
+		Thread.sleep(1000);
+		WebElement shadowDomHostElement = driver.findElement(By.cssSelector("#alusta-navigation"));
+		SearchContext last = (SearchContext) ((JavascriptExecutor) driver).executeScript("return arguments[0].shadowRoot", shadowDomHostElement);
+		Thread.sleep(1000);
+		last.findElement(By.cssSelector("a[title='Purchase Manager']")).click();	Thread.sleep(5000);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public void click_On_Image_Button() throws InterruptedException
 	{
 	 objBWRTesting_Invoicing_Locators.add_Image.click();
@@ -111,12 +135,22 @@ public class BWRTesting_Invoicing_Actions {
 	public void search_Invoice(String invoicenumber) throws InterruptedException
 	{
 		
-		CommonMethods.highLightMethod(driver.findElement(By.xpath("//input[@placeholder='Invoice Number']")));
 		
+	
+		driver.findElement(By.xpath("//input[@placeholder='Invoice Number']")).clear();
+		Thread.sleep(5000);
+		CommonMethods.highLightMethod(driver.findElement(By.xpath("//input[@placeholder='Invoice Number']")));
+		driver.findElement(By.xpath("//input[@placeholder='Invoice Number']")).clear();
+		Thread.sleep(5000);
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//input[@placeholder='Invoice Number']")).sendKeys(invoicenumber);;
 		Thread.sleep(5000);
 		objBWRTesting_Invoicing_Locators.click_Search_Button.click();
+	}
+	public String check_Processed_Status()
+	{
+		String str=objBWRTesting_Invoicing_Locators.alusta_Inovice_Status.getText();
+		return str;
 	}
 }
 

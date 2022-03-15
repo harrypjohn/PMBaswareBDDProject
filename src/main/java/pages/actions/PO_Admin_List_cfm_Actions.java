@@ -35,6 +35,12 @@ public String get_PO_Total() throws InterruptedException
 	String po_Total=objPO_Admin_List_cfm_Locators.po_Total.getText();
 	return po_Total;
 }
+
+public String get_PO_Status() throws InterruptedException
+{
+	String po_Status=objPO_Admin_List_cfm_Locators.po_Status.getText();
+	return po_Status;
+}
 public void receiving_Purchase_Order(String ponumber) throws InterruptedException
 {
 	CommonMethods.clickelement(objPO_Admin_List_cfm_Locators.click_Checkbox);

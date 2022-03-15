@@ -32,6 +32,11 @@ public class PO_Admin_List_cfm_Locators {
 	@FindBy(how=How.XPATH,using="/html/body/div[5]/div[3]/div/div[1]/div/div[2]/form/table/tbody/tr/td/div[1]/div[2]/table/tbody/tr[2]/td[8]/div/nobr/input")
 	public  WebElement Received_Quantity;
 	
+	@FindBy(how=How.XPATH,using="//*[@id='grid-table']/tbody/tr[2]/td[3]")
+	public  WebElement po_Status;
+	
+	
+	
 	
 	
 	
