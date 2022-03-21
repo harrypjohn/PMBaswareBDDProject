@@ -146,6 +146,7 @@ public class BWRTesting_Invoicing_Actions {
 		driver.findElement(By.xpath("//input[@placeholder='Invoice Number']")).sendKeys(invoicenumber);;
 		Thread.sleep(5000);
 		objBWRTesting_Invoicing_Locators.click_Search_Button.click();
+		Thread.sleep(5000);
 	}
 	public String check_Processed_Status()
 	{

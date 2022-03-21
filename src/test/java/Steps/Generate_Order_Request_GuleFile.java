@@ -173,11 +173,11 @@ public class Generate_Order_Request_GuleFile {
 		Thread.sleep(5000);
 		objPO_Admin_List_cfm_Actions.click_Search_Icon();
 
-		if (objPO_Admin_List_cfm_Actions.get_PO_Total().equalsIgnoreCase("fully received, reconciled")) {
+		if (objPO_Admin_List_cfm_Actions.get_PO_Status().equalsIgnoreCase("fully received, reconciled")) {
 			System.out.println("PM Purchase Order is showing fully received, reconciled Status");
 		} else {
 			System.out.println("PM Purchase Order Invoice is showing "
-					+ objBWRTesting_Invoicing_Actions.check_Processed_Status() + " Status");
+					+ objPO_Admin_List_cfm_Actions.get_PO_Status() + " Status");
 		}
 	}
 
