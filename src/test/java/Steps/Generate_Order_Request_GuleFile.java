@@ -38,6 +38,7 @@ public class Generate_Order_Request_GuleFile {
 	WebDriver driver = SeleniumDriver.getDriver();
 	public String invoice_Total;
 	public static String purchase_Order_Number;
+	public static String purchase_Order_Number1;
 
 	@Given("Launch browser for {string}")
 	public void launch_browser_for(String Url) throws AWTException {
@@ -83,7 +84,7 @@ public class Generate_Order_Request_GuleFile {
 	public void click_on_finish_request_button() throws InterruptedException {
 		objORs_Review_cfm_Actions.click_On_Finish_Request_Button();
 		purchase_Order_Number = objFinish_OR_Step2_cfm_Actions.return_Purchase_Order();
-		System.out.println("fdsfsadfsdafsdfsd" + purchase_Order_Number);
+		System.out.println("This is the first purchase order created" + purchase_Order_Number);
 
 	}
 
@@ -150,7 +151,7 @@ public class Generate_Order_Request_GuleFile {
 	}
 
 	public String purchaseoder() {
-		System.out.println("jjjjjjjjj" + purchase_Order_Number);
+		System.out.println("This method called to get Purchase Order: " + purchase_Order_Number);
 		return purchase_Order_Number;
 	}
 

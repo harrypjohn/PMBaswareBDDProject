@@ -56,7 +56,11 @@ public void clickOnSearchIcon() throws InterruptedException
 	executor.executeScript("arguments[0].click();", webElement);
 	Thread.sleep(2000);
 }
-
+public void click_On_Manage_Budgets() throws InterruptedException
+{
+	CommonMethods.click_element(objDashboard_cfm_Locators.Budgets);
+	CommonMethods.click_element(objDashboard_cfm_Locators.Manage_Budgets);
+}
 public void logout() throws InterruptedException
 {   Thread.sleep(2000);
 	CommonMethods.clickelement(objDashboard_cfm_Locators.adminDropDown);

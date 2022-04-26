@@ -16,4 +16,4 @@ Scenario Outline: Verify autoreceiving is working fine during Alusta invoicing
     
     Examples: 
       | Username  |Password |
-      | t3043admin |1h@ppyseal|
+      | t3043admin |1$hockedMonk3y|

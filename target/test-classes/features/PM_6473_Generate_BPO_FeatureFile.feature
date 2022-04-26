@@ -13,4 +13,4 @@ Scenario Outline: Create blanket PO request from a single Off catalog item
 	
 Examples:
   	| Username | Password | OffCatalog | VendorName | ItemDesc | Category | Qty | UnitPrice |
-    | T3043admin | 1h@ppyseal | Requisitions - Off Catalog Request | Hotel Glo | Samsung mobile | 123Hallway | 1 | 100 | 
+    | T3043admin | 1$hockedMonk3y | Requisitions - Off Catalog Request | Hotel Glo | Samsung mobile | 123Hallway | 1 | 100 | 

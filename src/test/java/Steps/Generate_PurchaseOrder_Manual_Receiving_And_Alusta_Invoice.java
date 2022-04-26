@@ -14,7 +14,7 @@ public class Generate_PurchaseOrder_Manual_Receiving_And_Alusta_Invoice {
 	public void receive_purchase_order() throws InterruptedException {
 		
 		String ponumber=new Generate_Order_Request_GuleFile().purchaseoder();
-		System.out.println("LLLLLLLLLLLLLLL"+ponumber);
+		System.out.println("This is Receive Purchase Order method to check Purchase Order"+ponumber);
 		objPO_Admin_List_cfm_Actions.receiving_Purchase_Order(ponumber);
 	}
 }

@@ -27,8 +27,11 @@ public class Dashboard_cfm_Locators {
 	@FindBy(how=How.XPATH,using="//li[contains(@class,'li-menu-item open')]//a[@id='profile-logout']")
 	public WebElement logout;
 	
+	@FindBy(how=How.XPATH,using="//a[@id='linkpitmenu_section_110']")
+	public WebElement Budgets; 
 	
-	
+	@FindBy(how=How.XPATH,using="//a[@id='linkpitmenu_item_1300']")
+	public WebElement Manage_Budgets;
 	
 
 
