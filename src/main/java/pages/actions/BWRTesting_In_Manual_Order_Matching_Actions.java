@@ -7,6 +7,7 @@ import java.awt.event.KeyEvent;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
+import Steps.Generate_Order_Request_GuleFile;
 import pages.locators.BWRTesting_Accounts_Payable_Locators;
 import pages.locators.BWRTesting_In_Manual_Order_Matching_Locators;
 import utils.CommonMethods;
@@ -16,8 +17,8 @@ public class BWRTesting_In_Manual_Order_Matching_Actions {
 	BWRTesting_In_Manual_Order_Matching_Locators objBWRTesting_In_Manual_Order_Matching_Locators;
 	WebDriver driver=SeleniumDriver.getDriver();
 
-	public BWRTesting_In_Manual_Order_Matching_Actions() {
 
+	public BWRTesting_In_Manual_Order_Matching_Actions() {
 		this.objBWRTesting_In_Manual_Order_Matching_Locators =new BWRTesting_In_Manual_Order_Matching_Locators();
 		PageFactory.initElements(driver, objBWRTesting_In_Manual_Order_Matching_Locators);
 
@@ -38,7 +39,8 @@ public class BWRTesting_In_Manual_Order_Matching_Actions {
 		CommonMethods.highLightMethod(objBWRTesting_In_Manual_Order_Matching_Locators.click_On_Retrieve_PO_DropDown);
 		CommonMethods.clickelement(objBWRTesting_In_Manual_Order_Matching_Locators.click_On_Retrieve_PO_DropDown);
 	}
-	public void retrieve_Purchase_Order() throws InterruptedException, AWTException {
+	public void retrieve_Purchase_Order(String PurchaseOrder) throws InterruptedException, AWTException {
+		System.out.println("the vlaue of theh eheh d"+PurchaseOrder);
 		CommonMethods.highLightMethod(objBWRTesting_In_Manual_Order_Matching_Locators.company);
 		
 		CommonMethods.clickelement(objBWRTesting_In_Manual_Order_Matching_Locators.company);
@@ -57,6 +59,9 @@ public class BWRTesting_In_Manual_Order_Matching_Actions {
 		CommonMethods.sendKeys(objBWRTesting_In_Manual_Order_Matching_Locators.enter_Supplier, "Hotel Glo");
 		CommonMethods.clickelement(objBWRTesting_In_Manual_Order_Matching_Locators.checkbox_Supplier);
 		CommonMethods.clickelement(objBWRTesting_In_Manual_Order_Matching_Locators.select_Supplier);
+        CommonMethods.highLightMethod(objBWRTesting_In_Manual_Order_Matching_Locators.PurchaseOrder);
+        Thread.sleep(2000);
+		CommonMethods.sendKeys(objBWRTesting_In_Manual_Order_Matching_Locators.PurchaseOrder,PurchaseOrder);
 		CommonMethods.clickelement(objBWRTesting_In_Manual_Order_Matching_Locators.Ok);
 		
 		

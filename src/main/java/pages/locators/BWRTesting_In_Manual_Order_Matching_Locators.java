@@ -31,6 +31,9 @@ public class BWRTesting_In_Manual_Order_Matching_Locators {
 	@FindBy(how=How.XPATH,using="//button[normalize-space()='Select']")
 	public WebElement select_Supplier;
 	
+	
+	@FindBy(how=How.XPATH,using="//div[@class='field-col field-col-left po-number']//input[@type='text']")
+    public WebElement PurchaseOrder;
 	@FindBy(how=How.XPATH,using="//button[normalize-space()='OK']")
 	public WebElement Ok;
 	

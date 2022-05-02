@@ -4,7 +4,9 @@ import java.awt.AWTException;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -49,7 +51,7 @@ public class Generate_Order_Request_GuleFile {
 	public void login_with_and(String username, String password)
 			throws InterruptedException, AWTException, IOException {
 		objlogin_cfm_Actions.UsernamePasswordEntry(username, password);
-
+		
 	}
 
 	@Then("Click on SearchCatalog button")
@@ -106,6 +108,7 @@ public class Generate_Order_Request_GuleFile {
 		objInvoice_Manager_cfm_Actions.click_On_Invoicing();
 		objInvoice_Manager_cfm_Actions.click_On_APAutomation_Approval();
 		objBwreleasetesting1_p2p_Edge_home_Actions.click_On_Accounts_Payable();
+		Thread.sleep(5000);
 
 	}
 
@@ -115,7 +118,7 @@ public class Generate_Order_Request_GuleFile {
 		objBWRTesting_In_Manual_Order_Matching_Actions.click_Open_Open_Button();
 		objBWRTesting_In_Manual_Order_Matching_Actions.click_On_More_Options();
 		objBWRTesting_In_Manual_Order_Matching_Actions.select_Retrieve_PurChase_OrderOption();
-		objBWRTesting_In_Manual_Order_Matching_Actions.retrieve_Purchase_Order();
+		objBWRTesting_In_Manual_Order_Matching_Actions.retrieve_Purchase_Order(purchase_Order_Number);
 		driver.navigate().refresh();
 
 	}
@@ -135,7 +138,7 @@ public class Generate_Order_Request_GuleFile {
 		if (CommonMethods.element_Present(objBWRTesting_Invoicing_Locators.xpath_Of_Count_Image)) {
 			objBWRTesting_Invoicing_Actions.click_On_Image_Button();
 			Thread.sleep(2000);
-			Runtime.getRuntime().exec("C:\\Users\\harbanslal\\workspace\\BaswareBDD\\AutoIT.exe");
+			Runtime.getRuntime().exec("D:\\Harbans\\Softwares\\AutoIT\\FileUpload.exe");
 			Thread.sleep(5000);
 			System.out.println("Auto IT run");
 

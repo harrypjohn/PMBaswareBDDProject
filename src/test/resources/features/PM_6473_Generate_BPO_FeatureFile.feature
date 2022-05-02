@@ -8,7 +8,7 @@ Scenario Outline: Create blanket PO request from a single Off catalog item
 	Then Select <OffCatalog> menu option1
 	And Configure Off Catalog Request with name <VendorName> desc <ItemDesc> cat <Category> Qty <Qty> UnitPrice <UnitPrice>
 	And Validate that Order request is created successfully
-	And Close the testcase
+	# And Close the testcase
 
 	
 Examples:

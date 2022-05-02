@@ -12,7 +12,10 @@ Scenario Outline: Verify autoreceiving is working fine during Alusta invoicing
     |Item1 with Category Office Supplies Yes|
     Then Click on Shopping Cart button
     Then Click on Finish Request button
-    And Close the testcase
+    Then Get Purchase Order Total
+    Then Click on AP Automation Approval
+    Then Click on Retrieve Purchase Order Data
+    Then Create Invoice
     
     Examples: 
       | Username  |Password |
